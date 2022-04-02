@@ -29,7 +29,7 @@ function getJokes(e) {
   let number = Number(document.querySelector('#number').value);  
 
   const request = new XMLHttpRequest();
-  request.open('GET', `http://api.icndb.com/jokes/random/${number}`, true);
+  request.open('GET', `https://api.icndb.com/jokes/random/${number}`, true);
   request.onload = function () {
     if (this.status === 200) {
       
