@@ -4,6 +4,7 @@ let totalJokes = document.querySelector('#total-jokes');
 let jokes;
 
 document.querySelector('.get-jokes').addEventListener('click', getJokes);
+document.querySelector('form').addEventListener('click', getJokes);
 window.addEventListener('DOMContentLoaded', fetchJokes);
 
 // IMPLEMENT LOCAL STORAGE
