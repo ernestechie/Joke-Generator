@@ -35,9 +35,15 @@ function getJokes(e) {
       let jokesHeading = document.querySelector('#jokes-heading');
       let jokeObjects = ((JSON.parse(request.responseText)).value);
 
-      if (number > 1) { jokesHeading.innerHTML = `Fetched ${number} jokes`; }
-      else { jokesHeading.innerHTML = `Input a valid number`;}
-        if (number === 1) { jokesHeading.innerHTML = `Fetched ${number} joke`; } 
+      if (number > 1) {
+        jokesHeading.innerHTML = `Fetched ${number} jokes`;
+      }
+      else {
+        jokesHeading.innerHTML = `Input a valid number`;
+      }
+      if (number === 1) {
+        jokesHeading.innerHTML = `Fetched ${number} joke`;
+      } 
 
       jokeObjects.forEach(function (joke) {
         const output = ` 
