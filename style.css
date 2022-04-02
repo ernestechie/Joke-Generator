@@ -1,0 +1,28 @@
+form {
+  margin: 0;
+}
+
+.busy-indicator {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem 5rem;
+  display: none;
+}
+
+.busy-indicator img {
+  width: 100%;
+}
+
+.delete-button {
+  display: inline-block;
+  padding: .3rem 1rem;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.jokes {
+  list-style-type: decimal;
+}

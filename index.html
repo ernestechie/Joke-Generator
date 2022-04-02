@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+  <title>XHR API Project - Chuck Norris Jokes</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h3>Chuck Norris Joke Generator</h3>
+    <form>
+      <div>
+        <label for="number">Number of Jokes</label>
+        <input type="number" id="number">
+        <button class="get-jokes button-primary">Get Jokes</button>
+      </div>
+    </form>
+    <div class="busy-indicator">
+      <img src="./images/busy-indicator.gif" alt="Picture of an activity loader. Busy indicator">
+    </div>
+    <h4 id="jokes-heading"></h4>
+    <h4 id="total-jokes"></h4>
+    <ul class="jokes">
+    </ul>
+  </div>
+  <script src="./App.js"></script>
+</body>
+</html>
